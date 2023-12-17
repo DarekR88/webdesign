@@ -10,7 +10,7 @@ export function Footer() {
           <span>&copy;</span> 2023 Darek Radke
         </p>
         <Link href={"/"} className="font-Raleway text-2xl px-3">
-          Insight Photography
+          Insight Web Design
         </Link>
         <Link href={"/requestservice"} className="text-xl">
           Request Service

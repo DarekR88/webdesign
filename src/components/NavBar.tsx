@@ -45,10 +45,10 @@ export function NavBar() {
           rel="noreferrer noopener"
           className="lg:hidden"
         >
-          <Image src={PhoneSvg} alt="pfp" width={23} />
+          <Image src={PhoneSvg} alt="pfp" width={23} /> 
         </a>
         <Link href={"/"} className="text-xl z-0 px-3">
-          Insight Photography
+          Insight Web Design
         </Link>
         <a
           href="tel:408-761-4606"
