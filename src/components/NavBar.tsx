@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { BurgerMenu } from "@/components/BurgerMenu";
@@ -14,6 +14,51 @@ import PhoneSvg from "../../public/icons/phone-svgrepo-com.svg";
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isActiveHome, setIsActiveHome] = useState(true);
+  const [isActivePortfolio, setIsActivePortfolio] = useState(false);
+  const [isActivePackages, setIsActivePackages] = useState(false);
+  const [isActiveSocialmedia, setIsActiveSocialmedia] = useState(false);
+  const [isActiveRequestService, setIsActiveRequestService] = useState(false);
+  
+  const handleClickHome = () => {
+    setIsActiveHome(true)
+    setIsActivePortfolio(false)
+    setIsActiveSocialmedia(false)
+    setIsActivePackages(false)
+    setIsActiveRequestService(false)
+  };
+
+  const handleClickPortfolio = () => {
+    setIsActiveHome(false)
+    setIsActivePortfolio(true)
+    setIsActiveSocialmedia(false)
+    setIsActivePackages(false)
+    setIsActiveRequestService(false)
+  };
+
+  const handleClickSocialmedia = () => {
+    setIsActiveHome(false)
+    setIsActivePortfolio(false)
+    setIsActiveSocialmedia(true)
+    setIsActivePackages(false)
+    setIsActiveRequestService(false)
+  };
+
+  const handleClickPackages = () => {
+    setIsActiveHome(false)
+    setIsActivePortfolio(false)
+    setIsActiveSocialmedia(false)
+    setIsActivePackages(true)
+    setIsActiveRequestService(false)
+  };
+
+  const handleClickRequestService = () => {
+    setIsActiveHome(false)
+    setIsActivePortfolio(false)
+    setIsActiveSocialmedia(false)
+    setIsActivePackages(false)
+    setIsActiveRequestService(true)
+  };
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -38,7 +83,7 @@ export function NavBar() {
           Request Service
         </Link>
       </div>
-      <header className="flex flex-wrap gap-4 py-4 justify-center items-center w-screen lg:flex-row lg:justify-between lg:px-20 lg:h-24">
+      <header className="flex flex-wrap gap-4 py-4 justify-center items-center w-screen lg:flex-row lg:justify-between lg:px-[100px] lg:h-24">
         <a
           href="tel:408-761-4606"
           target="_blank"
@@ -50,7 +95,24 @@ export function NavBar() {
         <Link href={"/"} className="text-xl z-0 px-3">
           Insight Web Design
         </Link>
-        <a
+        <div className="hidden lg:flex gap-6">
+          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/">
+            Home
+          </Link>
+          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/portfolio">
+            Portfolio
+          </Link>
+          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/packages">
+            Packages
+          </Link>
+          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/socialmedia">
+            Social Media
+          </Link>
+          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/requestservice">
+            Request Service
+          </Link>
+        </div>
+        {/* <a
           href="tel:408-761-4606"
           target="_blank"
           rel="noreferrer noopener"
@@ -67,7 +129,7 @@ export function NavBar() {
         >
           <Image src={MailIcon} alt="pfp" width={25} />
           <span className="pl-1">E-mail</span>
-        </a>
+        </a> */}
         <button
           onClick={handleClick}
           className="inline flex flex-col justify-center items-center z-20 lg:hidden"
@@ -91,18 +153,8 @@ export function NavBar() {
                     }`}
           ></span>
         </button>
-        <div className="hidden lg:flex gap-6">
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/">
-            Home
-          </Link>
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/portfolio">
-            Portfolio
-          </Link>
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/requestservice">
-            Request Service
-          </Link>
-        </div>
-        <div className="flex gap-8 px-2 z-0">
+
+        {/* <div className="flex gap-8 px-2 z-0">
           <a
             href="mailto:darekradke2@gmail.com"
             target="_blank"
@@ -117,13 +169,7 @@ export function NavBar() {
           >
             <Image src={FacebookIcon} alt="pfp" width={25} />
           </a>
-          {/* <a
-            href="mailto:darekradke2@gmail.com"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Image src={XIcon} alt="pfp" width={23} />
-          </a> */}
+
           <a
             href="mailto:darekradke2@gmail.com"
             target="_blank"
@@ -131,7 +177,7 @@ export function NavBar() {
           >
             <Image src={TiktokIcon} alt="pfp" width={25} />
           </a>
-        </div>
+        </div> */}
       </header>
     </>
   );
