@@ -19,45 +19,45 @@ export function NavBar() {
   const [isActivePackages, setIsActivePackages] = useState(false);
   const [isActiveSocialmedia, setIsActiveSocialmedia] = useState(false);
   const [isActiveRequestService, setIsActiveRequestService] = useState(false);
-  
+
   const handleClickHome = () => {
-    setIsActiveHome(true)
-    setIsActivePortfolio(false)
-    setIsActiveSocialmedia(false)
-    setIsActivePackages(false)
-    setIsActiveRequestService(false)
+    setIsActiveHome(true);
+    setIsActivePortfolio(false);
+    setIsActiveSocialmedia(false);
+    setIsActivePackages(false);
+    setIsActiveRequestService(false);
   };
 
   const handleClickPortfolio = () => {
-    setIsActiveHome(false)
-    setIsActivePortfolio(true)
-    setIsActiveSocialmedia(false)
-    setIsActivePackages(false)
-    setIsActiveRequestService(false)
+    setIsActiveHome(false);
+    setIsActivePortfolio(true);
+    setIsActiveSocialmedia(false);
+    setIsActivePackages(false);
+    setIsActiveRequestService(false);
   };
 
   const handleClickSocialmedia = () => {
-    setIsActiveHome(false)
-    setIsActivePortfolio(false)
-    setIsActiveSocialmedia(true)
-    setIsActivePackages(false)
-    setIsActiveRequestService(false)
+    setIsActiveHome(false);
+    setIsActivePortfolio(false);
+    setIsActiveSocialmedia(true);
+    setIsActivePackages(false);
+    setIsActiveRequestService(false);
   };
 
   const handleClickPackages = () => {
-    setIsActiveHome(false)
-    setIsActivePortfolio(false)
-    setIsActiveSocialmedia(false)
-    setIsActivePackages(true)
-    setIsActiveRequestService(false)
+    setIsActiveHome(false);
+    setIsActivePortfolio(false);
+    setIsActiveSocialmedia(false);
+    setIsActivePackages(true);
+    setIsActiveRequestService(false);
   };
 
   const handleClickRequestService = () => {
-    setIsActiveHome(false)
-    setIsActivePortfolio(false)
-    setIsActiveSocialmedia(false)
-    setIsActivePackages(false)
-    setIsActiveRequestService(true)
+    setIsActiveHome(false);
+    setIsActivePortfolio(false);
+    setIsActiveSocialmedia(false);
+    setIsActivePackages(false);
+    setIsActiveRequestService(true);
   };
 
   const handleClick = () => {
@@ -90,25 +90,61 @@ export function NavBar() {
           rel="noreferrer noopener"
           className="lg:hidden"
         >
-          <Image src={PhoneSvg} alt="pfp" width={23} /> 
+          <Image src={PhoneSvg} alt="pfp" width={23} />
         </a>
         <Link href={"/"} className="text-xl z-0 px-3">
           Insight Web Design
         </Link>
         <div className="hidden lg:flex gap-6">
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/">
+          <Link
+            className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+              isActiveHome
+                ? "border-b-[3px] border-black"
+                : "transition ease-in-out border-b-[3px] border-white duration-500"
+            }`}
+            onClick={handleClickHome}
+            href="/"
+          >
             Home
           </Link>
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/portfolio">
+          <Link
+            className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+              isActivePortfolio
+                ? "border-b-[3px] border-black"
+                : "transition ease-in-out border-b-[3px] border-white duration-500"
+            }`}
+            onClick={handleClickPortfolio}            href="/portfolio"
+          >
             Portfolio
           </Link>
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/packages">
+          <Link
+            className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+              isActivePackages
+                ? "border-b-[3px] border-black"
+                : "transition ease-in-out border-b-[3px] border-white duration-500"
+            }`}
+            onClick={handleClickPackages}            href="/packages"
+          >
             Packages
           </Link>
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/socialmedia">
+          <Link
+            className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+              isActiveSocialmedia
+                ? "border-b-[3px] border-black"
+                : "transition ease-in-out border-b-[3px] border-white duration-500"
+            }`}
+            onClick={handleClickSocialmedia}            href="/socialmedia"
+          >
             Social Media
           </Link>
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/requestservice">
+          <Link
+            className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+              isActiveRequestService
+                ? "border-b-[3px] border-black"
+                : "transition ease-in-out border-b-[3px] border-white duration-500"
+            }`}
+            onClick={handleClickRequestService}            href="/requestservice"
+          >
             Request Service
           </Link>
         </div>
