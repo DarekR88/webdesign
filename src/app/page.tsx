@@ -37,10 +37,36 @@ export default function Home() {
   return (
     <>
       <div className="max-w-[1200px] flex flex-col lg:flex-row m-auto lg:pt-6">
-        <div className="w-screen lg:max-w-600px">
-          <Image src={MockupImg1} alt="mockup1" />
-          <Image src={MockupImg2} alt="mockup2" />
-          <Image src={MockupImg3} alt="mockup3" />
+        <div className="w-screen h-[414px] lg:max-w-600px">
+          <Link href={"/portfolio"}>
+            <Image
+              src={MockupImg1}
+              alt="mockup1"
+              className={`absolute ${
+                isActiveImgOne
+                  ? "transition-all ease-in-out opacity-100 duration-700"
+                  : "transition-all ease-in-out opacity-0 duration-700"
+              }`}
+            />
+            <Image
+              src={MockupImg2}
+              alt="mockup2"
+              className={`absolute ${
+                isActiveImgTwo
+                  ? "transition-all ease-in-out opacity-100 duration-700"
+                  : "transition-all ease-in-out opacity-0 duration-700"
+              }`}
+            />
+            <Image
+              src={MockupImg3}
+              alt="mockup3"
+              className={`absolute ${
+                isActiveImgThree
+                  ? "transition-all ease-in-out opacity-100 duration-700"
+                  : "transition-all ease-in-out opacity-0 duration-700"
+              }`}
+            />
+          </Link>
         </div>
         <div className="w-screen lg:max-w-600px flex flex-col">
           <p>Web Design for the modern world</p>
