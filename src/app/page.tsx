@@ -6,6 +6,9 @@ import React, { useState, useEffect } from "react";
 import MockupImg1 from "../../public/images/deviceMockups.png";
 import MockupImg2 from "../../public/images/deviceMockups2.png";
 import MockupImg3 from "../../public/images/deviceMockups3.png";
+import LaptopImg1 from "../../public/images/image (6).png";
+import LaptopImg2 from "../../public/images/image (7).png";
+import LaptopImg3 from "../../public/images/image (8).png";
 
 export default function Home() {
   const [isActiveImgOne, setIsActiveImgOne] = useState(true);
@@ -73,15 +76,66 @@ export default function Home() {
           <p className="text-xl">Technology and security you can count on.</p>
         </div>
       </div>
-      <div className="w-screen flex flex-col lg:max-w-[1200px] lg:flex-row ">
-        <div>
-          
+      <div className="w-screen flex flex-col lg:max-w-[1200px] lg:flex-row m-auto lg:justify-between lg:mt-10">
+        <div className="lg:max-w-[375px]">
+          <Image src={LaptopImg1} alt="laptop 1"></Image>
+          <p>Basic Website</p>
+          <p>Great for portfolios.</p>
+          <p>Starting at $200.00</p>
+          <p>Features:</p>
+          <ul>
+            <li>
+              3 page max
+            </li>
+            <li>
+              Mobile Responsive
+            </li>
+            <li>
+              SEO Website Copy Editing
+            </li>
+          </ul>
         </div>
-        <div>
-          
+        <div className="lg:max-w-[375px]">
+          <Image src={LaptopImg2} alt="laptop 1"></Image>
+          <p>Professional Website</p>
+          <p>Perfect for your small business</p>
+          <p>Starting at $500.00</p>
+          <p>Features:</p>
+          <ul>
+            <li>
+              5 page max
+            </li>
+            <li>
+              Mobile Responsive
+            </li>
+            <li>
+              SEO Website Copy Editing
+            </li>
+            <li>
+              Service/Appointment Request Page
+            </li>
+          </ul>
         </div>
-        <div>
-
+        <div className="lg:max-w-[375px]">
+          <Image src={LaptopImg3} alt="laptop 1"></Image>
+          <p>Premium Website</p>
+          <p>E-commerce and customer/membership management</p>
+          <p>Starting at $2500.00</p>
+          <p>Features:</p>
+          <ul>
+            <li>
+              Customer Logins and Profiles
+            </li>
+            <li>
+              Website Analytics
+            </li>
+            <li>
+              Mobile Responsive
+            </li>
+            <li>
+              SEO Website Copy Editing
+            </li>
+          </ul>
         </div>
       </div>
     </>
