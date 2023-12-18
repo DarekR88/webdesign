@@ -1,34 +1,113 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState } from "react";
+import WebImg from "../../../public/images/websiteImg.png";
+import LongImg from "../../../public/images/image (5).png";
 
-export function Portfolio() {
-  const [isActiveProfessional, setIsActiveProfessional] = useState(true);
+export default function Portfolio() {
+  const [isActiveProfessional, setIsActiveProfessional] = useState(false);
   const [isActivePremium, setIsActivePremium] = useState(false);
-  const [isActiveBasic, setIsActiveBasic] = useState(false);
+  const [isActiveBasic, setIsActiveBasic] = useState(true);
+  const [isActiveDemoOne, setIsActiveDemoOne] = useState(true);
+  const [isActiveDemoTwo, setIsActiveDemoTwo] = useState(true);
+  const [isActiveDemoThree, setIsActiveDemoThree] = useState(true);
 
   const handleClickBasic = () => {
     setIsActiveBasic(true);
     setIsActiveProfessional(false);
-    setIsActivePremium(false)
+    setIsActivePremium(false);
   };
 
   const handleClickProfessional = () => {
     setIsActiveProfessional(true);
     setIsActiveBasic(false);
-    setIsActivePremium(false)
+    setIsActivePremium(false);
   };
 
   const handleClickPremium = () => {
     setIsActiveProfessional(false);
     setIsActiveBasic(false);
-    setIsActivePremium(true)
+    setIsActivePremium(true);
+  };
+
+  const handleClickDemoOne = () => {
+    setIsActiveDemoOne(true);
+    setIsActiveDemoTwo(false);
+    setIsActiveDemoThree(false);
+  };
+  const handleClickDemoTwo = () => {
+    setIsActiveDemoOne(false);
+    setIsActiveDemoTwo(true);
+    setIsActiveDemoThree(false);
+  };
+  const handleClickDemoThree = () => {
+    setIsActiveDemoOne(false);
+    setIsActiveDemoTwo(false);
+    setIsActiveDemoThree(true);
   };
 
   return (
     <>
-
+      <div>
+        <p className="text-6xl py-3 lg:py-10 text-center">Portfolio</p>
+        <div className="flex flex-row w-screen justify-center items-center py-4 gap-4">
+          <button
+            onClick={handleClickBasic}
+            className={`h-[26.8px] text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+              isActiveBasic
+                ? "transition ease-in-out border-b-[3px] border-black border-opacity-100 duration-500"
+                : "transition ease-in-out border-b-[3px] border-transparent duration-500"
+            }`}
+          >
+            Basic
+          </button>
+          <div className="relative h-[40px] w-[3px] bg-black"></div>
+          <button
+            onClick={handleClickProfessional}
+            className={`h-[26.8px] text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+              isActiveProfessional
+                ? "transition ease-in-out border-b-[3px] border-black border-opacity-100 duration-500"
+                : "transition ease-in-out border-b-[3px] border-transparent duration-500"
+            }`}
+          >
+            Professional
+          </button>
+          <div className="relative h-[40px] w-[3px] bg-black"></div>
+          <button
+            onClick={handleClickPremium}
+            className={`h-[26.8px] text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+              isActivePremium
+                ? "transition ease-in-out border-b-[3px] border-black border-opacity-100 duration-500"
+                : "transition ease-in-out border-b-[3px] border-transparent duration-500"
+            }`}
+          >
+            Premium
+          </button>
+        </div>
+        <div className="flex w-screen lg:max-w-[1200px] m-auto justify-center h-screen">
+          <div
+            className={`absolute ${
+              isActiveBasic
+                ? "transition-all ease-in-out opacity-100 duration-700"
+                : "transition-all ease-in-out opacity-0 duration-700"
+            }`}
+          >
+            <div className="flex flex-col gap-6 w-screen lg:max-w-[1000px] lg:flex-row lg:justify-between">
+              <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <Image src={WebImg} alt="web image" />
+              </div>
+              <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <Image src={WebImg} alt="web image" />
+              </div>
+              <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <Image src={WebImg} alt="web image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
