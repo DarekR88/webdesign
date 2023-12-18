@@ -106,7 +106,7 @@ export default function Portfolio() {
             <div className="flex flex-col gap-6 w-screen lg:max-w-[1000px] lg:flex-row lg:justify-between">
               <div
                 onClick={handleClickDemoOne}
-                className={`p-2 rounded-md ${
+                className={`w-[320px] p-2 rounded-md ${
                   isActiveDemoOne
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
@@ -118,7 +118,7 @@ export default function Portfolio() {
               </div>
               <div
                 onClick={handleClickDemoTwo}
-                className={`p-2 rounded-md ${
+                className={`w-[320px] p-2 rounded-md ${
                   isActiveDemoTwo
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
@@ -130,7 +130,7 @@ export default function Portfolio() {
               </div>
               <div
                 onClick={handleClickDemoThree}
-                className={`p-2 rounded-md ${
+                className={`w-[320px] p-2 rounded-md ${
                   isActiveDemoThree
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
@@ -152,7 +152,7 @@ export default function Portfolio() {
             <div className="flex flex-col gap-6 w-screen lg:max-w-[1000px] lg:flex-row lg:justify-between">
               <div
                 onClick={handleClickDemoOne}
-                className={`p-2 rounded-md ${
+                className={`w-[320px] p-2 rounded-md ${
                   isActiveDemoOne
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
@@ -164,7 +164,7 @@ export default function Portfolio() {
               </div>
               <div
                 onClick={handleClickDemoTwo}
-                className={`p-2 rounded-md ${
+                className={`w-[320px] p-2 rounded-md ${
                   isActiveDemoTwo
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
@@ -176,7 +176,7 @@ export default function Portfolio() {
               </div>
               <div
                 onClick={handleClickDemoThree}
-                className={`p-2 rounded-md ${
+                className={`w-[320px] p-2 rounded-md ${
                   isActiveDemoThree
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
@@ -198,7 +198,7 @@ export default function Portfolio() {
             <div className="flex flex-col gap-6 w-screen lg:max-w-[1000px] lg:flex-row lg:justify-between">
               <div
                 onClick={handleClickDemoOne}
-                className={`p-2 rounded-md ${
+                className={`w-[320px] p-2 rounded-md ${
                   isActiveDemoOne
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
@@ -210,7 +210,7 @@ export default function Portfolio() {
               </div>
               <div
                 onClick={handleClickDemoTwo}
-                className={`p-2 rounded-md ${
+                className={`w-[320px] p-2 rounded-md ${
                   isActiveDemoTwo
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
@@ -222,7 +222,7 @@ export default function Portfolio() {
               </div>
               <div
                 onClick={handleClickDemoThree}
-                className={`p-2 rounded-md ${
+                className={`w-[320px] p-2 rounded-md ${
                   isActiveDemoThree
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
