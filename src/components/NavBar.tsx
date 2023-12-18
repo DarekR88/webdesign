@@ -79,19 +79,25 @@ export function NavBar() {
         <Link onClick={handleClick} className="text-3xl" href="/portfolio">
           Portfolio
         </Link>
+        <Link onClick={handleClick} className="text-3xl" href="/packages">
+          Packages
+        </Link>
+        <Link onClick={handleClick} className="text-3xl" href="/socialmedia">
+          Social Media
+        </Link>
         <Link onClick={handleClick} className="text-3xl" href="/requestservice">
           Request Service
         </Link>
       </div>
       <header className="flex flex-wrap gap-4 py-4 justify-center items-center w-screen lg:flex-row lg:justify-between lg:px-[100px] lg:h-24">
-        <a
+        {/* <a
           href="tel:408-761-4606"
           target="_blank"
           rel="noreferrer noopener"
           className="lg:hidden"
         >
           <Image src={PhoneSvg} alt="pfp" width={23} />
-        </a>
+        </a> */}
         <Link href={"/"} className="text-xl z-0 px-3">
           Insight Web Design
         </Link>

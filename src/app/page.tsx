@@ -9,8 +9,8 @@ import MockupImg3 from "../../public/images/deviceMockups3.png";
 
 export default function Home() {
   const [isActiveImgOne, setIsActiveImgOne] = useState(true);
-  const [isActiveImgTwo, setIsActiveImgTwo] = useState(true);
-  const [isActiveImgThree, setIsActiveImgThree] = useState(true);
+  const [isActiveImgTwo, setIsActiveImgTwo] = useState(false);
+  const [isActiveImgThree, setIsActiveImgThree] = useState(false);
 
   useEffect(() => {
     //Implementing the setInterval method
@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <>
       <div className="max-w-[1200px] flex flex-col lg:flex-row m-auto lg:pt-6">
-        <div className="w-screen h-[414px] lg:max-w-600px">
+        <div className="w-screen h-[240px] lg:h-[414px] lg:max-w-600px">
           <Link href={"/portfolio"}>
             <Image
               src={MockupImg1}
@@ -68,9 +68,20 @@ export default function Home() {
             />
           </Link>
         </div>
-        <div className="w-screen lg:max-w-600px flex flex-col">
-          <p>Web Design for the modern world</p>
-          <p>Technology and security you can count on for your enterprise.</p>
+        <div className="w-screen text-center px-3 lg:text-left lg:max-w-600px flex flex-col lg:pt-6">
+          <p className="text-3xl lg:text-5xl">Web Design for the modern world</p>
+          <p className="text-xl">Technology and security you can count on.</p>
+        </div>
+      </div>
+      <div className="w-screen flex flex-col lg:max-w-[1200px] lg:flex-row ">
+        <div>
+          
+        </div>
+        <div>
+          
+        </div>
+        <div>
+
         </div>
       </div>
     </>
