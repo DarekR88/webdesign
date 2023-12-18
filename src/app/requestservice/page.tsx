@@ -23,7 +23,7 @@ export default function RequestService() {
               placeholder="E-mail"
             />
           </div>
-          <div className="flex flex-row max-w-[380px] m-auto justify-between my-3">
+          <div className="flex w-[300px] lg:flex-row lg:max-w-[380px] m-auto justify-between my-3">
             <div>
               <label>
                 <input type="checkbox" name="event" id="event" />
