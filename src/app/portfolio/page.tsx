@@ -11,25 +11,34 @@ export default function Portfolio() {
   const [isActivePremium, setIsActivePremium] = useState(false);
   const [isActiveBasic, setIsActiveBasic] = useState(true);
   const [isActiveDemoOne, setIsActiveDemoOne] = useState(true);
-  const [isActiveDemoTwo, setIsActiveDemoTwo] = useState(true);
-  const [isActiveDemoThree, setIsActiveDemoThree] = useState(true);
+  const [isActiveDemoTwo, setIsActiveDemoTwo] = useState(false);
+  const [isActiveDemoThree, setIsActiveDemoThree] = useState(false);
 
   const handleClickBasic = () => {
     setIsActiveBasic(true);
     setIsActiveProfessional(false);
     setIsActivePremium(false);
+    setIsActiveDemoOne(true);
+    setIsActiveDemoTwo(false);
+    setIsActiveDemoThree(false);
   };
 
   const handleClickProfessional = () => {
     setIsActiveProfessional(true);
     setIsActiveBasic(false);
     setIsActivePremium(false);
+    setIsActiveDemoOne(true);
+    setIsActiveDemoTwo(false);
+    setIsActiveDemoThree(false);
   };
 
   const handleClickPremium = () => {
     setIsActiveProfessional(false);
     setIsActiveBasic(false);
     setIsActivePremium(true);
+    setIsActiveDemoOne(true);
+    setIsActiveDemoTwo(false);
+    setIsActiveDemoThree(false);
   };
 
   const handleClickDemoOne = () => {
@@ -88,21 +97,140 @@ export default function Portfolio() {
         </div>
         <div className="flex w-screen lg:max-w-[1200px] m-auto justify-center h-screen">
           <div
-            className={`absolute ${
+            className={`absolute py-6 ${
               isActiveBasic
                 ? "transition-all ease-in-out opacity-100 duration-700"
                 : "transition-all ease-in-out opacity-0 duration-700"
             }`}
           >
             <div className="flex flex-col gap-6 w-screen lg:max-w-[1000px] lg:flex-row lg:justify-between">
-              <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
-                <Image src={WebImg} alt="web image" />
+              <div
+                onClick={handleClickDemoOne}
+                className={`p-2 rounded-md ${
+                  isActiveDemoOne
+                    ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
+                    : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
+                }`}
+              >
+                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                  <Image src={WebImg} alt="web image" />
+                </div>
               </div>
-              <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
-                <Image src={WebImg} alt="web image" />
+              <div
+                onClick={handleClickDemoTwo}
+                className={`p-2 rounded-md ${
+                  isActiveDemoTwo
+                    ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
+                    : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
+                }`}
+              >
+                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                  <Image src={WebImg} alt="web image" />
+                </div>
               </div>
-              <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
-                <Image src={WebImg} alt="web image" />
+              <div
+                onClick={handleClickDemoThree}
+                className={`p-2 rounded-md ${
+                  isActiveDemoThree
+                    ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
+                    : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
+                }`}
+              >
+                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                  <Image src={WebImg} alt="web image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`absolute py-6 ${
+              isActiveProfessional
+                ? "transition-all ease-in-out opacity-100 duration-700"
+                : "transition-all ease-in-out opacity-0 duration-700"
+            }`}
+          >
+            <div className="flex flex-col gap-6 w-screen lg:max-w-[1000px] lg:flex-row lg:justify-between">
+              <div
+                onClick={handleClickDemoOne}
+                className={`p-2 rounded-md ${
+                  isActiveDemoOne
+                    ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
+                    : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
+                }`}
+              >
+                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                  <Image src={LongImg} alt="web image" />
+                </div>
+              </div>
+              <div
+                onClick={handleClickDemoTwo}
+                className={`p-2 rounded-md ${
+                  isActiveDemoTwo
+                    ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
+                    : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
+                }`}
+              >
+                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                  <Image src={LongImg} alt="web image" />
+                </div>
+              </div>
+              <div
+                onClick={handleClickDemoThree}
+                className={`p-2 rounded-md ${
+                  isActiveDemoThree
+                    ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
+                    : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
+                }`}
+              >
+                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                  <Image src={LongImg} alt="web image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`absolute py-6 ${
+              isActivePremium
+                ? "transition-all ease-in-out opacity-100 duration-700"
+                : "transition-all ease-in-out opacity-0 duration-700"
+            }`}
+          >
+            <div className="flex flex-col gap-6 w-screen lg:max-w-[1000px] lg:flex-row lg:justify-between">
+              <div
+                onClick={handleClickDemoOne}
+                className={`p-2 rounded-md ${
+                  isActiveDemoOne
+                    ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
+                    : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
+                }`}
+              >
+                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                  <Image src={WebImg} alt="web image" />
+                </div>
+              </div>
+              <div
+                onClick={handleClickDemoTwo}
+                className={`p-2 rounded-md ${
+                  isActiveDemoTwo
+                    ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
+                    : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
+                }`}
+              >
+                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                  <Image src={WebImg} alt="web image" />
+                </div>
+              </div>
+              <div
+                onClick={handleClickDemoThree}
+                className={`p-2 rounded-md ${
+                  isActiveDemoThree
+                    ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
+                    : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
+                }`}
+              >
+                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                  <Image src={WebImg} alt="web image" />
+                </div>
               </div>
             </div>
           </div>
