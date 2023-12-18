@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   color: black;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    35deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(207, 211, 221, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }

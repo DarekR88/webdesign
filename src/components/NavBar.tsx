@@ -106,7 +106,7 @@ export function NavBar() {
             className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
               isActiveHome
                 ? "border-b-[3px] border-black"
-                : "transition ease-in-out border-b-[3px] border-white duration-500"
+                : "transition ease-in-out border-b-[3px] border-transparent duration-500"
             }`}
             onClick={handleClickHome}
             href="/"
@@ -117,7 +117,7 @@ export function NavBar() {
             className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
               isActivePortfolio
                 ? "border-b-[3px] border-black"
-                : "transition ease-in-out border-b-[3px] border-white duration-500"
+                : "transition ease-in-out border-b-[3px] border-transparent duration-500"
             }`}
             onClick={handleClickPortfolio}            href="/portfolio"
           >
@@ -127,7 +127,7 @@ export function NavBar() {
             className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
               isActivePackages
                 ? "border-b-[3px] border-black"
-                : "transition ease-in-out border-b-[3px] border-white duration-500"
+                : "transition ease-in-out border-b-[3px] border-transparent duration-500"
             }`}
             onClick={handleClickPackages}            href="/packages"
           >
@@ -137,7 +137,7 @@ export function NavBar() {
             className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
               isActiveSocialmedia
                 ? "border-b-[3px] border-black"
-                : "transition ease-in-out border-b-[3px] border-white duration-500"
+                : "transition ease-in-out border-b-[3px] border-transparent duration-500"
             }`}
             onClick={handleClickSocialmedia}            href="/socialmedia"
           >
@@ -147,7 +147,7 @@ export function NavBar() {
             className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
               isActiveRequestService
                 ? "border-b-[3px] border-black"
-                : "transition ease-in-out border-b-[3px] border-white duration-500"
+                : "transition ease-in-out border-b-[3px] border-transparent duration-500"
             }`}
             onClick={handleClickRequestService}            href="/requestservice"
           >
