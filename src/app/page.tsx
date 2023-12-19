@@ -32,7 +32,7 @@ export default function Home() {
         setIsActiveImgTwo(false);
         setIsActiveImgThree(false);
       }
-    }, 4000);
+    }, 3000);
 
     //Clearing the interval
     return () => clearInterval(interval);
