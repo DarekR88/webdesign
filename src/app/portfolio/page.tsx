@@ -5,6 +5,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import WebImg from "../../../public/images/websiteImg.png";
 import LongImg from "../../../public/images/image (5).png";
+import MockupImg from "../../../public/images/deviceMockups.png";
+import MockupImg2 from "../../../public/images/deviceMockups2.png";
 
 export default function Portfolio() {
   const [isActiveProfessional, setIsActiveProfessional] = useState(false);
@@ -95,7 +97,7 @@ export default function Portfolio() {
             Premium
           </button>
         </div>
-        <div className="flex w-screen lg:max-w-[1200px] m-auto justify-center h-screen">
+        <div className="flex w-screen lg:max-w-[1200px] m-auto justify-center min-h-screen">
           <div
             className={`absolute py-6 ${
               isActiveBasic
@@ -139,6 +141,64 @@ export default function Portfolio() {
                 <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
                   <Image src={WebImg} alt="web image" />
                 </div>
+              </div>
+            </div>
+            <div
+              className={`absolute max-w-[1200px] flex flex-col lg:flex-row mt-8 ${
+                isActiveDemoOne
+                  ? "transition-all delay-300 ease-in-out opacity-100 duration-700"
+                  : "transition-all ease-in-out opacity-0 duration-700"
+              }
+            
+            `}
+            >
+              <div className="flex w-screen lg:max-w-[600px]">
+                <Image src={MockupImg} alt="mockup" className="max-w-[600px]" />
+              </div>
+              <div className="flex flex-col w-screen lg:max-w-[600px]">
+                <p className="text-3xl">Website Title</p>
+                <p>Website description</p>
+                <p>features list</p>
+              </div>
+            </div>
+            <div
+              className={`absolute max-w-[1200px] flex flex-col lg:flex-row mt-8 ${
+                isActiveDemoTwo
+                  ? "transition-all delay-300 ease-in-out opacity-100 duration-700"
+                  : "transition-all ease-in-out opacity-0 duration-700"
+              }
+            
+            `}
+            >
+              <div className="flex w-screen lg:max-w-[600px]">
+                <Image
+                  src={MockupImg2}
+                  alt="mockup"
+                  className="max-w-[600px]"
+                />
+              </div>
+              <div className="flex flex-col w-screen lg:max-w-[600px]">
+                <p className="text-3xl">Website Title</p>
+                <p>Website description</p>
+                <p>features list</p>
+              </div>
+            </div>
+            <div
+              className={`absolute max-w-[1200px] flex flex-col lg:flex-row mt-8 ${
+                isActiveDemoThree
+                  ? "transition-all delay-300 ease-in-out opacity-100 duration-700"
+                  : "transition-all ease-in-out opacity-0 duration-700"
+              }
+            
+            `}
+            >
+              <div className="flex w-screen lg:max-w-[600px]">
+                <Image src={MockupImg} alt="mockup" className="max-w-[600px]" />
+              </div>
+              <div className="flex flex-col w-screen lg:max-w-[600px]">
+                <p className="text-3xl">Website Title</p>
+                <p>Website description</p>
+                <p>features list</p>
               </div>
             </div>
           </div>
@@ -187,6 +247,54 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
+            <div className={`absolute max-w-[1200px] flex flex-col lg:flex-row mt-8 ${
+                  isActiveDemoOne
+                    ? "transition-all delay-300 ease-in-out opacity-100 duration-700"
+                    : "transition-all ease-in-out opacity-0 duration-700"
+                }
+            
+            `}>
+              <div className="flex w-screen lg:max-w-[600px]">
+                <Image src={MockupImg2} alt="mockup" className="max-w-[600px]" />
+              </div>
+              <div className="flex flex-col w-screen lg:max-w-[600px]">
+                <p className="text-3xl">Website Title</p>
+                <p>Website description</p>
+                <p>features list</p>
+              </div>
+            </div>
+            <div className={`absolute max-w-[1200px] flex flex-col lg:flex-row mt-8 ${
+                  isActiveDemoTwo
+                    ? "transition-all delay-300 ease-in-out opacity-100 duration-700"
+                    : "transition-all ease-in-out opacity-0 duration-700"
+                }
+            
+            `}>
+              <div className="flex w-screen lg:max-w-[600px]">
+                <Image src={MockupImg} alt="mockup" className="max-w-[600px]" />
+              </div>
+              <div className="flex flex-col w-screen lg:max-w-[600px]">
+                <p className="text-3xl">Website Title</p>
+                <p>Website description</p>
+                <p>features list</p>
+              </div>
+            </div>
+            <div className={`absolute max-w-[1200px] flex flex-col lg:flex-row mt-8 ${
+                  isActiveDemoThree
+                    ? "transition-all delay-300 ease-in-out opacity-100 duration-700"
+                    : "transition-all ease-in-out opacity-0 duration-700"
+                }
+            
+            `}>
+              <div className="flex w-screen lg:max-w-[600px]">
+                <Image src={MockupImg2} alt="mockup" className="max-w-[600px]" />
+              </div>
+              <div className="flex flex-col w-screen lg:max-w-[600px]">
+                <p className="text-3xl">Website Title</p>
+                <p>Website description</p>
+                <p>features list</p>
+              </div>
+            </div>
           </div>
           <div
             className={`absolute py-6 ${
@@ -231,6 +339,54 @@ export default function Portfolio() {
                 <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
                   <Image src={WebImg} alt="web image" />
                 </div>
+              </div>
+            </div>
+            <div className={`absolute max-w-[1200px] flex flex-col lg:flex-row mt-8 ${
+                  isActiveDemoOne
+                    ? "transition-all delay-300 ease-in-out opacity-100 duration-700"
+                    : "transition-all ease-in-out opacity-0 duration-700"
+                }
+            
+            `}>
+              <div className="flex w-screen lg:max-w-[600px]">
+                <Image src={MockupImg} alt="mockup" className="max-w-[600px]" />
+              </div>
+              <div className="flex flex-col w-screen lg:max-w-[600px]">
+                <p className="text-3xl">Website Title</p>
+                <p>Website description</p>
+                <p>features list</p>
+              </div>
+            </div>
+            <div className={`absolute max-w-[1200px] flex flex-col lg:flex-row mt-8 ${
+                  isActiveDemoTwo
+                    ? "transition-all delay-300 ease-in-out opacity-100 duration-700"
+                    : "transition-all ease-in-out opacity-0 duration-700"
+                }
+            
+            `}>
+              <div className="flex w-screen lg:max-w-[600px]">
+                <Image src={MockupImg2} alt="mockup" className="max-w-[600px]" />
+              </div>
+              <div className="flex flex-col w-screen lg:max-w-[600px]">
+                <p className="text-3xl">Website Title</p>
+                <p>Website description</p>
+                <p>features list</p>
+              </div>
+            </div>
+            <div className={`absolute max-w-[1200px] flex flex-col lg:flex-row mt-8 ${
+                  isActiveDemoThree
+                    ? "transition-all delay-300 ease-in-out opacity-100 duration-700"
+                    : "transition-all ease-in-out opacity-0 duration-700"
+                }
+            
+            `}>
+              <div className="flex w-screen lg:max-w-[600px]">
+                <Image src={MockupImg} alt="mockup" className="max-w-[600px]" />
+              </div>
+              <div className="flex flex-col w-screen lg:max-w-[600px]">
+                <p className="text-3xl">Website Title</p>
+                <p>Website description</p>
+                <p>features list</p>
               </div>
             </div>
           </div>
