@@ -105,7 +105,7 @@ export default function Portfolio() {
                 : "transition-all ease-in-out opacity-0 duration-700"
             }`}
           >
-            <div className="flex flex-row gap-6 w-screen lg:max-w-[1000px] justify-between">
+            <div className="flex flex-row justify-center gap-6 w-screen lg:max-w-[1000px] lg:justify-between">
               <div
                 onClick={handleClickDemoOne}
                 className={`p-2 rounded-md ${
@@ -209,7 +209,7 @@ export default function Portfolio() {
                 : "transition-all ease-in-out opacity-0 duration-700"
             }`}
           >
-            <div className="flex flex-row gap-6 w-screen lg:max-w-[1000px] justify-between">
+            <div className="flex flex-row justify-center gap-6 w-screen lg:max-w-[1000px] lg:justify-between">
               <div
                 onClick={handleClickDemoOne}
                 className={`p-2 rounded-md ${
@@ -303,7 +303,7 @@ export default function Portfolio() {
                 : "transition-all ease-in-out opacity-0 duration-700"
             }`}
           >
-            <div className="flex flex-row gap-6 w-screen lg:max-w-[1000px] justify-between">
+            <div className="flex flex-row justify-center gap-6 w-screen lg:max-w-[1000px] lg:justify-between">
               <div
                 onClick={handleClickDemoOne}
                 className={`p-2 rounded-md ${
