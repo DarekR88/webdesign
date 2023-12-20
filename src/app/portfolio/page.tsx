@@ -105,40 +105,40 @@ export default function Portfolio() {
                 : "transition-all ease-in-out opacity-0 duration-700"
             }`}
           >
-            <div className="flex flex-col gap-6 w-screen lg:max-w-[1000px] lg:flex-row lg:justify-between">
+            <div className="flex flex-row gap-6 w-screen lg:max-w-[1000px] justify-between">
               <div
                 onClick={handleClickDemoOne}
-                className={`w-[320px] p-2 rounded-md ${
+                className={`p-2 rounded-md ${
                   isActiveDemoOne
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
                 }`}
               >
-                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <div className="w-[75px] h-[75px] lg:w-[300px] lg:h-[100px] overflow-hidden rounded-md">
                   <Image src={WebImg} alt="web image" />
                 </div>
               </div>
               <div
                 onClick={handleClickDemoTwo}
-                className={`w-[320px] p-2 rounded-md ${
+                className={`p-2 rounded-md ${
                   isActiveDemoTwo
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
                 }`}
               >
-                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <div className="w-[75px] h-[75px] lg:w-[300px] lg:h-[100px] overflow-hidden rounded-md">
                   <Image src={WebImg} alt="web image" />
                 </div>
               </div>
               <div
                 onClick={handleClickDemoThree}
-                className={`w-[320px] p-2 rounded-md ${
+                className={`p-2 rounded-md ${
                   isActiveDemoThree
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
                 }`}
               >
-                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <div className="w-[75px] h-[75px] lg:w-[300px] lg:h-[100px] overflow-hidden rounded-md">
                   <Image src={WebImg} alt="web image" />
                 </div>
               </div>
@@ -209,40 +209,40 @@ export default function Portfolio() {
                 : "transition-all ease-in-out opacity-0 duration-700"
             }`}
           >
-            <div className="flex flex-col gap-6 w-screen lg:max-w-[1000px] lg:flex-row lg:justify-between">
+            <div className="flex flex-row gap-6 w-screen lg:max-w-[1000px] justify-between">
               <div
                 onClick={handleClickDemoOne}
-                className={`w-[320px] p-2 rounded-md ${
+                className={`p-2 rounded-md ${
                   isActiveDemoOne
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
                 }`}
               >
-                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <div className="w-[75px] h-[75px] lg:w-[300px] lg:h-[100px] overflow-hidden rounded-md">
                   <Image src={LongImg} alt="web image" />
                 </div>
               </div>
               <div
                 onClick={handleClickDemoTwo}
-                className={`w-[320px] p-2 rounded-md ${
+                className={`p-2 rounded-md ${
                   isActiveDemoTwo
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
                 }`}
               >
-                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <div className="w-[75px] h-[75px] lg:w-[300px] lg:h-[100px] overflow-hidden rounded-md">
                   <Image src={LongImg} alt="web image" />
                 </div>
               </div>
               <div
                 onClick={handleClickDemoThree}
-                className={`w-[320px] p-2 rounded-md ${
+                className={`p-2 rounded-md ${
                   isActiveDemoThree
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
                 }`}
               >
-                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <div className="w-[75px] h-[75px] lg:w-[300px] lg:h-[100px] overflow-hidden rounded-md">
                   <Image src={LongImg} alt="web image" />
                 </div>
               </div>
@@ -303,40 +303,40 @@ export default function Portfolio() {
                 : "transition-all ease-in-out opacity-0 duration-700"
             }`}
           >
-            <div className="flex flex-col gap-6 w-screen lg:max-w-[1000px] lg:flex-row lg:justify-between">
+            <div className="flex flex-row gap-6 w-screen lg:max-w-[1000px] justify-between">
               <div
                 onClick={handleClickDemoOne}
-                className={`w-[320px] p-2 rounded-md ${
+                className={`p-2 rounded-md ${
                   isActiveDemoOne
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
                 }`}
               >
-                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <div className="w-[75px] h-[75px] lg:w-[300px] lg:h-[100px] overflow-hidden rounded-md">
                   <Image src={WebImg} alt="web image" />
                 </div>
               </div>
               <div
                 onClick={handleClickDemoTwo}
-                className={`w-[320px] p-2 rounded-md ${
+                className={`p-2 rounded-md ${
                   isActiveDemoTwo
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
                 }`}
               >
-                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <div className="w-[75px] h-[75px] lg:w-[300px] lg:h-[100px] overflow-hidden rounded-md">
                   <Image src={WebImg} alt="web image" />
                 </div>
               </div>
               <div
                 onClick={handleClickDemoThree}
-                className={`w-[320px] p-2 rounded-md ${
+                className={`p-2 rounded-md ${
                   isActiveDemoThree
                     ? "transition-all ease-in-out border-2 border-black border-opacity-100 duration-700"
                     : "transition-all ease-in-out border-2 border-transparent border-opacity-0 duration-700"
                 }`}
               >
-                <div className="w-[300px] h-[100px] overflow-hidden rounded-md">
+                <div className="w-[75px] h-[75px] lg:w-[300px] lg:h-[100px] overflow-hidden rounded-md">
                   <Image src={WebImg} alt="web image" />
                 </div>
               </div>
