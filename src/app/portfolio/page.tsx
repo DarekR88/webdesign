@@ -62,7 +62,7 @@ export default function Portfolio() {
   return (
     <>
       <div>
-        <p className="text-6xl py-3 lg:py-10 text-center">Portfolio</p>
+        <p className="text-6xl py-3 lg:pt-10 lg:pb-8 text-center">Portfolio</p>
         <div className="flex flex-row w-screen justify-center items-center py-4 gap-4">
           <button
             onClick={handleClickBasic}

@@ -80,17 +80,29 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <p className="text-6xl text-center py-4 lg:py-8">How It Works</p>
-        <div className="max-w-[1200px] flex flex-col lg:flex-row m-auto">
-          <div className="w-screen lg:max-w-[600px]">
+        <p className="text-6xl text-center py-4 lg:py-8">What We Do</p>
+        <div className="max-w-[1200px] flex flex-col-reverse lg:flex-row m-auto">
+          <div className="w-screen px-4 lg:px-6 lg:max-w-[600px]">
             <p>
-              Are you in need of a website? Insight Web solutions is your one
-              stop shop for all of your website and social media needs. We use
-              cutting edge technologies and practices to create the best
-              websites and content.
+              Having a website can be a game changer in the digital world. At
+              Insight Web Design our highly skilled team produces the best
+              websites. Whether you own a small business, or just want to
+              procure digital ad space, we have your back.
+            </p>
+            <p className="text-2xl">Website Design and Programming</p>
+            <p>Get the Website of your dreams.</p>
+            <p className="text-2xl">Website Care and Maintenance</p>
+            <p>
+              Our low-cost maintenance programs are the best in the industry.
+            </p>
+            <p className="text-2xl">Social Media</p>
+            <p>
+              The most popular social media apps see ten&#39;s of million&#39;s
+              of users daily. Our experts will help you take advantage of that
+              traffic.
             </p>
           </div>
-          <div className="w-screen lg:max-w-[600px]">
+          <div className="w-screen h-[150px] overflow-hidden lg:max-w-[600px] lg:h-[501px]">
             <Image src={TableImg} alt="table" />
           </div>
         </div>
