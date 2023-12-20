@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       <div className="max-w-[1200px] flex flex-col lg:flex-row m-auto lg:pt-6">
-        <div className="w-screen h-[240px] lg:h-[414px] lg:max-w-600px">
+        <div className="w-screen h-[320px] lg:h-[414px] lg:max-w-600px">
           <Link href={"/portfolio"}>
             <Image
               src={MockupImg1}
